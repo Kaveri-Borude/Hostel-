@@ -1,0 +1,684 @@
+
+
+<html>
+    <head>
+        <title>Main.php</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+                <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
+
+      <style>
+           
+          
+      
+            .card-header {
+              /* background-color: #e0e0e0;  */
+              color: #333;             
+              font-weight: 600;
+               color: #123673 !important;
+            }
+
+            .card-body{
+              background-color:#f1f8f6;
+               border-radius: 12px;
+                border: 2px solid #008080;
+            }
+
+
+
+            .index_heding{
+                  font-size:20px;
+                  font-weight:bold;
+            }
+            
+            .page-title {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #123673;
+        }
+
+            .card {
+                   transition: transform 0.3s ease, box-shadow 0.3s ease;
+                   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                   border-radius: 12px;
+            }
+
+
+            .card:hover {
+             transform: translateY(-8px); 
+             box-shadow: 0 8px 20px rgba(0,0,0,0.25); 
+            }
+
+            /* hostel */
+            .main_container {
+                   /* background-image: url("../../../Apply CSS/main/bgmain.png"); */
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: center;  
+                   min-height: 100vh;            
+                   width: 100%;                  
+                   margin: 0;                   
+                   padding: 0;                  
+            }
+
+            .harchitecture {
+                   display: flex;
+                   justify-content: space-evenly; 
+                   align-items: center;           
+                   gap: 20px;                     
+            }                 
+                              
+            .hostel_img {
+                    background-image: url("images/hostel.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 45%;   
+                    height: 400px;
+                    border-radius: 12px;
+            }                 
+                              
+            .harchitecture_info {
+                    border: 1px solid #008080;
+                    width: 45%;   
+                    height: 400px;
+                    padding: 15px;
+                   border-radius: 15px 50px; /* top-left & bottom-right = 15px, top-right & bottom-left = 50px */
+                   
+                   background-color: #90D1CA;
+                   color:#00008B;
+                   font-weight:bold;
+                   font-family: 'Poppins', sans-serif;/* clean and modern */
+                     font-size: 18px;
+                     line-height: 1.6;
+                     font-weight: 500;
+            }                 
+            
+            .harchitecture_h2{
+                  text-align:center;
+                  margin-top:5rem;
+                  background-color: #456882;
+                  color: White;
+            }
+
+            .harchitecture_info:hover{
+                  color:broun;
+            }
+            .info-section {
+                display: flex;
+                flex-wrap: wrap;              /* responsive */
+                justify-content: space-evenly;
+                gap: 20px;
+                margin: 40px auto;
+            }
+
+
+
+
+
+
+
+          .info-card {
+            width: 300px;
+            background-color: #f9f9f9;
+            border: 2px solid #008080;
+            border-radius: 15px 50px;   
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .info-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+          }
+
+          .info-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;             
+            font-size: 20px;
+            color: #123673;
+            margin-top: 15px;
+          }
+
+          .info-card p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+          }
+
+          /* Image placeholders */
+          .info-img {
+            width: 100%;
+            height: 180px;
+            border-radius: 12px;
+            background-size: cover;
+            background-position: center;
+          }
+
+      
+          .studyroom { background-image: url("images/studyhall.png"); }
+          .mess{ background-image: url("images/H mess.jpg"); }
+          .ground{ background-image: url("images/h ground.jpg"); }
+          .Bedroom{ background-image: url("images/hostel room.jpg"); }
+
+
+                /* ===== Hostel Rules Section ===== */
+          .rules-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border: 2px solid #008080;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          }
+
+          .rules-container h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #123673;
+            margin-bottom: 20px;
+          }
+
+          .rules-container ol {
+            padding-left: 20px;
+          }
+
+          .rules-container li {
+            margin-bottom: 20px;
+          }
+
+          .rules-container strong {
+            color: #008080;
+            font-size: 18px;
+          }
+
+          .rules-container p {
+            margin: 5px 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+          }
+
+          /* ===== FAQ Section ===== */
+          .faq-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #f1f8f6;
+            border: 2px solid #456882;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          }
+
+          .faq-container h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #123673;
+            margin-bottom: 25px;
+          }
+
+          .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #008080;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .faq-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+          }
+
+          .faq-item h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #456882;
+            margin-bottom: 8px;
+          }
+
+          .faq-item p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+          }
+
+
+          /* ===== Privacy Policy Section ===== */
+          .privacy-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border: 2px solid #008080;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-family: 'Poppins', sans-serif;
+          }
+
+          .privacy-container h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #123673;
+            margin-bottom: 25px;
+          }
+
+          .privacy-container section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #fff;
+            border-left: 4px solid #456882;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .privacy-container section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+          }
+
+          .privacy-container h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #008080;
+            margin-bottom: 10px;
+          }
+
+          .privacy-container p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            margin: 5px 0;
+          }
+
+
+          /* ===== Hostel Facilities Section (Feature List Style) ===== */
+          .facilities-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: linear-gradient(135deg, #f1f8f6, #ffffff);
+            border: 2px solid #008080;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-family: 'Poppins', sans-serif;
+          }
+
+          .facilities-container h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #123673;
+            margin-bottom: 25px;
+          }
+
+          .facilities-container ul {
+            list-style: none;   
+            padding: 0;
+          }
+
+          .facilities-container li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+          }
+
+          .facilities-container li:hover {
+            background-color: #f9f9f9;
+          }
+
+          .facilities-container strong {
+            flex: 0 0 180px;  
+            font-size: 17px;
+            font-weight: 600;
+            color: #008080;
+          }
+
+          .facilities-container p {
+            flex: 1;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+          }
+
+      </style>
+
+
+    </head>
+
+    
+
+        <?php    
+          include("Storage/Navbars/navbarMain.php");
+         ?>
+<div class="main_container">
+       <div class=" container-fluid  mt-5 "> <br>
+            <h2 class="page-title mb-5">Welcome to Hostel Management Portal</h2>
+             <div class="row text-center justify-content-center mt-10">
+
+                       <div class="col-md-2 mb-3">
+                <div class="card shadow-lg hover-shadow h-100 text-center">
+                  <div class="card-body">
+                    <img src="images/clipboard-user-solid-full.svg" alt="icon" width="80" height="80">
+                    <div class="card-header"><h3 class="index_heding">Register as Staff</h3></div>
+                    <form action="MainPage/registerNewStaff1.php" method="get">
+                      <h6>Click Here to Register As Staff</h6>
+                      <button class="btn btn-outline-primary mt-2">Register</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <div class="card shadow-lg hover-shadow h-100 text-center">
+                  <div class="card-body">
+                    <img src="images/circle-user-solid-full.svg" alt="icon" width="80" height="80">
+                    <div class="card-header"><h3 class="index_heding">Login as Staff</h3></div>
+                    <form action="MainPage/loginStaff1.php" method="get">
+                      <h6>Click Here to Login As Staff</h6>
+                      <button class="btn btn-outline-primary mt-2">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <div class="card shadow-lg hover-shadow h-100 text-center">
+                  <div class="card-body">
+                    <img src="images/bed-solid-full.svg" alt="icon" width="80" height="80">
+                    <div class="card-header"><h3 class="index_heding">Reserve Bed</h3></div>
+                    <form action="MainPage/RegisterNewStudent1.php" method="get">
+                      <h6>Click Here to Register</h6>
+                      <button class="btn btn-outline-primary mt-2">Register</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <div class="card shadow-lg hover-shadow h-100 text-center">
+                  <div class="card-body">
+                    <img src="images/user-solid-full.svg" alt="icon" width="80" height="80">
+                    <div class="card-header"><h3 class="index_heding">Student Login</h3></div>
+                    <form action="MainPage/loginStudent1.php" method="get">
+                      <button class="btn btn-outline-primary mt-2">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <div class="card shadow-lg hover-shadow h-100 text-center">
+                  <div class="card-body">
+                    <i class="fa-solid fa-eye mb-3" style="font-size: 60px;"></i>
+                    <div class="card-header"><h3 class="index_heding">Authority Login</h3></div>
+                    <form action="MainAuthority/ALogin1.php" method="get">
+                      <button class="btn btn-outline-primary mt-2">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+<div id="Hostel_information">
+           <h2 class="page-title mt-5">Hostel Information</h2>
+           <br><br>
+          <div class="harchitecture">
+                <div class="hostel_img">
+
+                </div>
+                <div class="harchitecture_info ">
+                      <br>
+                      <p>  <i>Welcome to our hostel in the PVP College campus environment. It is a safe and friendly place for students to stay,
+                             study, and grow. We provide clean rooms, study spaces, Wi‑Fi, and healthy food in the dining hall.<br><br>
+                            The hostel has 24/7 security, wardens, and a peaceful atmosphere so students can focus on their studies. Being inside
+                             the college campus makes it easy to reach classes, library, and other facilities.
+
+                            Our hostel is not just a place to live — it is a supportive home where students learn discipline, respect, and build 
+
+                            good friendships.</i></p>
+                </div>
+          </div>
+
+
+          <div class="info-section">
+            <div class="info-card">
+              <div class="info-img studyroom"></div>
+              <h3>Study Room</h3>
+              <p>Quiet study areas with Wi‑Fi and proper lighting to help students focus on their learning.Modern design with spacious rooms and balconies, providing comfort and safety for students.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-img mess"></div>
+              <h3>Mess Facility</h3>
+              <p>Healthy and hygienic food served daily in a clean dining hall with seating for all students.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-img ground"></div>
+              <h3>Play Ground</h3>
+              <p>Open ground for sports and activities, encouraging fitness and recreation alongside academics.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-img Bedroom"></div>
+              <h3>Bed Room</h3>
+              <p>Comfortable and well‑furnished bedrooms with proper ventilation, storage space, and a peaceful environment for rest and relaxation.”</p>
+            </div>
+          </div>
+          <br><br>
+</div>
+
+            <div class="facilities-container">
+              <h1>Hostel Facilities</h1>
+              <ul>
+                <li>
+                  <strong>Spacious Rooms</strong>
+                  <p>Well-ventilated rooms with comfortable beds, study tables, and storage facilities.</p>
+                </li>
+
+                <li>
+                  <strong>Dining Hall</strong>
+                  <p>Nutritious meals served at fixed timings in a clean and hygienic dining area.</p>
+                </li>
+
+                <li>
+                  <strong>Wi-Fi Connectivity</strong>
+                  <p>High-speed internet access available throughout the hostel premises.</p>
+                </li>
+
+                <li>
+                  <strong>Study Area</strong>
+                  <p>Dedicated quiet zones and common study halls for group discussions and learning.</p>
+                </li>
+
+                <li>
+                  <strong>Recreation</strong>
+                  <p>Indoor games, outdoor sports facilities for relaxation and fitness.</p>
+                </li>
+
+                <li>
+                  <strong>Security</strong>
+                  <p>24/7 security with CCTV surveillance and hostel ID verification.</p>
+                </li>
+
+                <li>
+                  <strong>Medical Support</strong>
+                  <p>First-aid facilities and tie-ups with nearby hospitals for emergencies.</p>
+                </li>
+              </ul>
+            </div>
+
+
+          <div>
+          <div class="rules-container">
+              <h1>Hostel Rules</h1>
+              <ol>
+                <li>
+                  <strong>General Conduct</strong>
+                  <p>Residents must maintain discipline and respect toward staff and fellow students.</p>
+                  <p>Loud music, parties, and disruptive behavior are strictly prohibited.</p>
+                </li>
+
+                <li>
+                  <strong>Timings</strong>
+                  <p>Entry and exit are allowed only between <em>6:00 AM to 6:00 PM</em>.</p>
+                  <p>Late entries require prior written permission from the warden.</p>
+                </li>
+
+                <li>
+                  <strong>Cleanliness</strong>
+                  <p>Rooms and common areas must be kept clean and tidy.</p>
+                  <p>Littering in corridors, bathrooms, or outdoor spaces is not allowed.</p>
+                </li>
+
+                <li>
+                  <strong>Visitors</strong>
+                  <p>Visitors are allowed only during designated hours and must register at the front desk.</p>
+                  <p>Overnight stays by guests are not permitted.</p>
+                </li>
+
+                <li>
+                  <strong>Safety & Security</strong>
+                  <p>Residents must carry their hostel ID at all times.</p>
+                  <p>Tampering with fire safety equipment or security systems is a serious offense.</p>
+                </li>
+
+                <li>
+                  <strong>Food & Cooking</strong>
+                  <p>Cooking inside rooms is strictly prohibited.</p>
+                </li>
+
+                <li>
+                  <strong>Prohibited Items</strong>
+                  <p>Electrical appliances like heaters or induction cooktops are not allowed in rooms.</p>
+                </li>
+
+                <li>
+                  <strong>Damages</strong>
+                  <p>Any damage to hostel property must be reported and compensated by the resident.</p>
+                </li>
+
+                <li>
+                  <strong>Attendance</strong>
+                  <p>Daily attendance may be taken for safety and accountability.</p>
+                </li>
+
+                <li>
+                  <strong>Disciplinary Action</strong>
+                  <p>Violation of rules may lead to warnings, fines, or cancellation of hostel accommodation.</p>
+                </li>
+                <li>
+                   <strong>Ragging</strong>
+                  <p>Ragging in any Form is strictly Prohibited.</p>
+                </li>
+              </ol>
+            </div>
+
+
+            <div class="faq-container">
+              <h1>Frequently Asked Questions</h1>
+              <div class="faq-item">
+                <h2>1. What are the hostel timings?</h2>
+                <p>Entry and exit are allowed only between <em>6:00 AM to 6:00 PM</em>. Late entries require prior permission from the warden.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2>2. Can visitors stay overnight?</h2>
+                <p>No, overnight stays by guests are not permitted. Visitors are allowed only during designated hours and must register at the front desk.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2>3. Is Wi-Fi available in the hostel?</h2>
+                <p>Yes, high-speed Wi-Fi connectivity is available throughout the hostel premises.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2>4. What facilities are provided in the rooms?</h2>
+                <p>Rooms are equipped with beds, study tables, chairs, and storage facilities. Each room is well-ventilated and maintained regularly.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2>5. How do I report maintenance issues?</h2>
+                <p>Residents can report issues directly to the hostel office or through the online student portal. Maintenance staff will address them promptly.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="privacy-container">
+              <h1>Privacy Policy</h1>
+
+              <section>
+                <h2>1. Information We Collect</h2>
+                <p>We collect basic personal details such as name, contact information, and admission records to provide hostel services.</p>
+              </section>
+
+              <section>
+                <h2>2. How We Use Your Information</h2>
+                <p>Your information is used for admissions, room allocation, communication, and safety purposes. We do not share your data with unauthorized parties.</p>
+              </section>
+
+              <section>
+                <h2>3. Data Security</h2>
+                <p>We implement strict security measures to protect your personal information from unauthorized access, misuse, or disclosure.</p>
+              </section>
+
+              <section>
+                <h2>4. Sharing of Information</h2>
+                <p>We may share information with government authorities or emergency services when legally required or for safety reasons.</p>
+              </section>
+
+              <section>
+                <h2>5. Student Rights</h2>
+                <p>Students have the right to  request deletion of their personal data by contacting the hostel administration.</p>
+              </section>
+
+              <section>
+                <h2>6. Policy Updates</h2>
+                <p>This privacy policy may be updated periodically. Students will be notified of significant changes through the hostel notice board or portal.</p>
+              </section>
+            </div>
+
+          </html>
+          <?php
+            include("Storage/Footer/Footer2.php");
+          ?>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

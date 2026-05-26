@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+.sRegisbody{
+     /* background-color: #dcefef; */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+   background-size: cover;
+
+}
+
+#sRegish2 {
+    font-weight: 600;
+    color: #1154ba;
+    font-size:36px;
+    color: #2a5298 !important;
+    text-align: center;
+    border-bottom: 2px ;
+    padding-bottom: 8px;
+
+
+
+}
+
+.sRegisForm {
+    width: 100%;
+    max-width: 800px;
+     background-color:#f1f8f6;
+     border-radius: 12px;
+     border: 1px solid #008080; 
+    padding: 30px 30px 40px;
+    box-shadow: 2px  #008080;
+}
+
+
+
+.sRegislabel {
+    display: block;
+    margin-top: 26px;
+    font-weight: 600;
+    color: #2a5298;
+    border-left: 4px solid #008080;;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.innerlabel {
+
+    display: block;
+    margin-top: 14px;
+    color: #555;
+    font-weight: bolder;
+    font-size: 19px !important;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="file"] {
+
+    width: 100%;
+    display:flex;
+    padding: 10px 12px 0 12px;
+    border-radius: 8px;
+    border: 1px solid #456882;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+    background-color: #f8fafc;
+
+}
+
+
+.sRegisbtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px 10px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    border: 1px;
+    border-radius: 999px;
+
+}
+
+.sRegisbtn:hover {
+    transform: translateY(0);
+    box-shadow: 0 8px 20px #008080;;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .sRegisForm {
+        padding: 22px 18px 28px;
+        border-radius: 10px;
+    }
+
+    .sRegisForm> :first-child {
+        font-size: 1.3rem;
+    }
+}
+
+
+.open-sans-heading {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#label1{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+hr{
+    font-weight: bolder !important;
+}
+
+
+
+
+.sRegisform-row {
+  display: flex;
+  gap: 20px; /* spacing between fields */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-group1 {
+  flex: 1; /* equal width */
+}
+
+
+.form-group2{
+  flex: 1; /* equal width */
+  margin-top: 55px;
+}
+

@@ -1,2 +1,2 @@
-# Hostel-
-Hostel Management Project
+# HostelManagement
+Performs Hostel Specific Operations Easily.
